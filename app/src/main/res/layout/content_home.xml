@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mindfiresolutions.trackyourfittness.MainActivities.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_margin"
+                card_view:cardCornerRadius="@dimen/cardview_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_my_req_tittle"
+                        style="@style/AppTheme.CardviewTitle"
+                        android:background="@color/cardview_background_red"
+                        android:text="@string/prompt_weight" />
+
+
+                    <LinearLayout
+                        android:id="@+id/cardview_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/user_my_req_res_type_icon"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="@dimen/admin_home_menu_icon_size"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="@dimen/cv_icon_padding"
+                            android:src="@drawable/measuring" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/imgbtn_homepage_weight_decrement"
+                                    android:background="@color/colorWhite"
+                                    android:src="@drawable/minus" />
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="@color/cardview_background_red">
+
+                                    <EditText
+                                        style="@style/AppTheme.CardviewEditText"
+                                        android:id="@+id/homepage_weight_input"
+                                        android:hint="@string/kg"
+                                        android:inputType="numberDecimal"
+                                         />
+                                </android.support.design.widget.TextInputLayout>
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imgbtn_homepage_weight_increment"
+                                    android:layout_gravity="center"
+                                    android:background="@color/colorWhite"
+                                    android:src="@drawable/plus" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_margin"
+                card_view:cardCornerRadius="@dimen/cardview_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/AppTheme.CardviewTitle"
+                        android:background="@color/cardview_background_blue"
+                        android:text="@string/prompt_water_intake" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="@dimen/admin_home_menu_icon_size"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="@dimen/cv_icon_padding"
+                            android:src="@drawable/glass_of_water" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/colorWhite"
+                                    android:src="@drawable/minus"
+                                    android:id="@+id/imgbtn_homepage_wtr_intk_decrement"/>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="@color/cardview_background_blue">
+
+                                    <EditText
+                                        android:id="@+id/homepage_water_intake_input"
+                                        style="@style/AppTheme.CardviewEditText"
+                                        android:hint="@string/glasses"
+                                        android:inputType="numberDecimal"/>
+                                </android.support.design.widget.TextInputLayout>
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/imgbtn_homepage_wtr_intk_increment"
+                                    android:background="@color/colorWhite"
+                                    android:src="@drawable/plus" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_margin"
+                card_view:cardCornerRadius="@dimen/cardview_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/AppTheme.CardviewTitle"
+                        android:background="@color/cardview_background_green"
+                        android:text="@string/prompt_blood_pressure" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="@dimen/admin_home_menu_icon_size"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="@dimen/cv_icon_padding"
+                            android:src="@drawable/blood_pressure_gauge" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/imgbtn_homepage_high_bp_decrement"
+                                    android:background="@color/colorWhite"
+                                    android:src="@drawable/minus" />
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="@color/cardview_background_green">
+
+                                    <EditText
+                                        style="@style/AppTheme.CardviewEditText"
+                                        android:id="@+id/homepage_high_bp_input"
+                                        android:hint="@string/prompt_high_bp"
+                                        android:inputType="numberDecimal" />
+                                </android.support.design.widget.TextInputLayout>
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/imgbtn_homepage_high_bp_increment"
+                                    android:background="@color/colorWhite"
+                                    android:src="@drawable/plus" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/imgbtn_homepage_low_bp_decrement"
+                                    android:background="@color/colorWhite"
+                                    android:src="@drawable/minus" />
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="@color/cardview_background_green">
+
+                                    <EditText
+                                        style="@style/AppTheme.CardviewEditText"
+                                        android:id="@+id/homepage_low_bp_input"
+                                        android:hint="@string/prompt_low_bp"
+                                        android:inputType="numberDecimal" />
+                                </android.support.design.widget.TextInputLayout>
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/imgbtn_homepage_low_bp_increment"
+                                    android:background="@color/colorWhite"
+                                    android:src="@drawable/plus" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_margin"
+                card_view:cardCornerRadius="@dimen/cardview_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/AppTheme.CardviewTitle"
+                        android:background="@color/cardview_background_orange"
+                        android:text="@string/prompt_running_or_waliking" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="@dimen/admin_home_menu_icon_size"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="@dimen/cv_icon_padding"
+                            android:src="@drawable/running" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/colorWhite"
+                                    android:id="@+id/imgbtn_homepage_distance_decrement"
+                                    android:src="@drawable/minus" />
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="@color/cardview_background_orange">
+
+                                    <EditText
+                                        style="@style/AppTheme.CardviewEditText"
+                                        android:id="@+id/homepage_distance_input"
+                                        android:hint="@string/km"
+                                        android:inputType="numberDecimal" />
+                                </android.support.design.widget.TextInputLayout>
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/imgbtn_homepage_distance_increment"
+                                    android:background="@color/colorWhite"
+                                    android:src="@drawable/plus" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/homepage_submit_button"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/styled_black_button_layout"
+                android:text="@string/submit_btn_text"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

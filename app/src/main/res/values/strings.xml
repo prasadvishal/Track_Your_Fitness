@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">TrackYourFittness</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="prompt_home">Home</string>
+    <string name="prompt_weight">Weight</string>
+    <string name="kg">KG</string>
+    <string name="prompt_water_intake">Water Intake</string>
+    <string name="glasses">Glasses</string>
+    <string name="prompt_blood_pressure">Blood Pressure</string>
+    <string name="bp">BP</string>
+    <string name="prompt_running_or_waliking">Running/Walking</string>
+    <string name="km">KM</string>
+    <string name="prompt_BMI">BMI</string>
+    <string name="submit_btn_text">Submit Data</string>
+    <string name="prompt_high_bp">High BP</string>
+    <string name="prompt_low_bp">Low BP</string>
+    <string name="action_history">History</string>
+    <string name="error_field_required">Field Required !</string>
+    <string name="error_invalid_entry">Its a Non Negitive Field. Please Enter Positive Number</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_update_today_data">Update Today\'s Data</string>
+    <string name="sqlite_date_format">YYYY-MM-DD</string>
+    <string name="title_activity_graph">GraphActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="title_activity_fullscreen_launcher">FullscreenLauncherActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="loading">Loading...</string>
+    <string name="rv_lable_weight">Weight</string>
+    <string name="prompt_error_no_value_in_db">No Entries found in DATABASE</string>
+    <string name="prompt_performance_summary">Performance Summary</string>
+    <string name="prompt_graph_xaxis">x - axis :</string>
+    <string name="prompt_graph_yaxis">y - axis :</string>
+    <string name="prompt_time">Time</string>
+    <string name="prompt_update">Update</string>
+    <string name="prompt_successfully_updated">Record Updated Sucessfully.</string>
+</resources>

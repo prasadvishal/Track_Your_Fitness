@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    card_view:cardCornerRadius="@dimen/cradview_corner_radius"
+    android:layout_margin="@dimen/cardview_margin">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cardview_background">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rv_item_et_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/styled_black_button_layout"
+                android:hint="@string/sqlite_date_format"
+                android:textColor="@color/colorWhite"
+                android:padding="@dimen/textfields_padding"
+                android:textSize="@dimen/subheading" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/content_textsize"
+                    android:gravity="center"
+                    android:textColor="@color/cardview_background_red"
+                    android:text="@string/rv_lable_weight"
+                    android:padding="@dimen/textfields_padding" />
+
+                <TextView
+                    android:id="@+id/rv_item_et_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/kg"
+                    android:padding="@dimen/textfields_padding"
+                    android:textColor="@color/cardview_background_red" />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/content_textsize"
+                        android:gravity="center"
+                        android:text="@string/prompt_water_intake"
+                        android:textColor="@color/cardview_background_blue"
+                        android:padding="@dimen/textfields_padding" />
+
+                    <TextView
+                        android:id="@+id/rv_item_et_wtr_intk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/glasses"
+                        android:padding="@dimen/textfields_padding"
+                        android:textColor="@color/cardview_background_blue" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/content_textsize"
+                        android:gravity="center"
+                        android:text="@string/prompt_high_bp"
+                        android:textColor="@color/cardview_background_green"
+                        android:padding="@dimen/textfields_padding" />
+
+                    <TextView
+                        android:id="@+id/rv_item_et_high_bp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/bp"
+                        android:padding="@dimen/textfields_padding"
+                        android:textColor="@color/cardview_background_green" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/content_textsize"
+                        android:gravity="center"
+                        android:text="@string/prompt_low_bp"
+                        android:textColor="@color/cardview_background_green"
+                        android:padding="@dimen/textfields_padding" />
+
+                    <TextView
+                        android:id="@+id/rv_item_et_low_bp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/bp"
+                        android:padding="@dimen/textfields_padding"
+                        android:textColor="@color/cardview_background_green" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/content_textsize"
+                        android:gravity="center"
+                        android:text="@string/prompt_running_or_waliking"
+                        android:padding="@dimen/textfields_padding"
+                        android:textColor="@color/cardview_background_orange"/>
+
+                    <TextView
+                        android:id="@+id/rv_item_et_distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/km"
+                        android:padding="@dimen/textfields_padding"
+                        android:textColor="@color/cardview_background_orange" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
